@@ -32,21 +32,17 @@ img {
   margin-right: auto;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: crimson;
+  background-color: rgb(245, 233, 201);
   font-family: "Roboto", sanserif;
 }
 
 @media screen and (min-width: 600px) {
   .container {
     width: 600px;
-
-    background-color: rgb(33, 20, 220);
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
-
-    background-color: rgb(167, 220, 20);
   }
 }
