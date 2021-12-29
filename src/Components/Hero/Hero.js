@@ -1,5 +1,4 @@
 import s from "./Hero.module.css";
-import im from "../../imeges/heroImg.jpg";
 import { StandartBtn } from "../Buttons";
 
 export default function Hero() {

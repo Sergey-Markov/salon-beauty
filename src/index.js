@@ -6,7 +6,7 @@ import "typeface-roboto";
 import reportWebVitals from "./reportWebVitals";
 
 // eslint-disable-next-line
-import "swiper/css/bundle";
+// import "swiper/css/bundle";
 
 ReactDOM.render(
   <React.StrictMode>
