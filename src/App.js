@@ -11,7 +11,7 @@ function App() {
     <Container>
       <Header />
       <Hero />
-      <OurService />
+      <OurService />  
       <p>My App</p>
     </Container>
   );
