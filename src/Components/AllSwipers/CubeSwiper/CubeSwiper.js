@@ -1,6 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { EffectCube, Pagination } from "swiper";
+import { GetDiscountBtn } from "../../Buttons";
+import { ServiceCard } from "../../ServiceCard";
 
 // Import Swiper styles===============================
 import "swiper/css";
@@ -12,11 +14,10 @@ import "./styles.scss";
 
 SwiperCore.use([EffectCube, Pagination]);
 
-const CubeSwiper = ({ data, dataServices }) => {
+const CubeSwiper = ({ data, title, withBtn, btnTitle, elClass }) => {
   return (
-    <div className="OurService-field">
-      <h2>{dataServices.title}</h2>
-      <p className="OurService-ourService">{dataServices.text}</p>
+    <div className="CubeSwiper-field">
+      <h2 className="CubeSwiper-title">{title}</h2>
       <Swiper
         effect={"cube"}
         grabCursor={true}
@@ -35,12 +36,11 @@ const CubeSwiper = ({ data, dataServices }) => {
       >
         {data.map((slide) => (
           <SwiperSlide key={uuidv4()}>
-            <img alt={slide.alt} src={slide.imgSrc} />
-            <h3 className="OurService-title">{slide.title}</h3>
-            <p>{slide.text}</p>
+            <ServiceCard slide={slide} className={elClass} />
           </SwiperSlide>
         ))}
       </Swiper>
+      {withBtn && btnTitle && <GetDiscountBtn>{btnTitle}</GetDiscountBtn>}
     </div>
   );
 };

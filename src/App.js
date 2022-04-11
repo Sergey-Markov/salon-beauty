@@ -1,5 +1,6 @@
 // import "./App.css";
 import React from "react";
+import ChoseUs from "./Components/ChoseUs/ChoseUs.js";
 import Container from "./Components/Container/Container.js";
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Hero />
       <OurService />
+      <ChoseUs />
     </Container>
   );
 }
