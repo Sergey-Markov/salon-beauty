@@ -1,0 +1,42 @@
+.Hero {
+  &-field {
+    box-sizing: border-box;
+    width: auto;
+    height: 500px;
+    background-size: auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right top, #02020223, #5b5f5121),
+      url(../../imeges/heroFirst_mob.jpg);
+    background-color: darkslategray;
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+
+  &-title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.04em;
+    color: white;
+    font-weight: bold;
+    text-shadow: rgba(201, 15, 191) 0 0 3px;
+  }
+  &-slon {
+    font-weight: bold;
+    text-shadow: rgb(252, 206, 0) 0 0 3px;
+  }
+  &-text {
+    font-size: 12xp;
+    line-height: 15px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.03em;
+    text-shadow: rgb(0, 0, 0) 0 0 3px;
+
+    margin-top: 15px;
+    margin-bottom: 120px;
+  }
+}

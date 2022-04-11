@@ -1,4 +1,5 @@
 import CommunButton from "./CommunButton";
-import { StandartBtn } from "./StandartBtn";
-import { ConfirmBtn } from "./ConfirmBtn";
-export { CommunButton, StandartBtn, ConfirmBtn };
+import { GetDiscountBtn } from "./GetDiscountBtn";
+import MenuBtn from "./MenuBtn";
+
+export { CommunButton, GetDiscountBtn, MenuBtn };

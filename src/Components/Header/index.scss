@@ -1,0 +1,26 @@
+.Header {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: rgb(245, 233, 201);
+    border-bottom: 1px solid #000;
+  }
+
+  &-logo_s {
+    font-family: sans-serif;
+    font-size: xx-large;
+    color: rgba(201, 15, 191, 1);
+    font: 2em Arial, sans-serif;
+    text-shadow: black 0 0 3px;
+    font-weight: 900;
+    margin: 0;
+  }
+  &-logo {
+    font-size: x-large;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+  }
+}

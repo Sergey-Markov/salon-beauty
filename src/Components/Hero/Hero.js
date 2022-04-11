@@ -1,17 +1,19 @@
-import s from "./Hero.module.css";
-import { StandartBtn } from "../Buttons";
+import { GetDiscountBtn } from "../Buttons";
+import "./index.scss";
+// import { StandartBtn } from "../Buttons";
 
 export default function Hero() {
   return (
-    <div className={s.field}>
-      <h1 className={s.title}>
-        Салон красоты <span className={s.slon}>$lon</span>
+    <div className="Hero-field">
+      <h1 className="Hero-title">
+        Салон красоты <span className="Hero-slon">$lon</span>
       </h1>
-      <p className={s.text}>
+      <p className="Hero-text">
         Cтрижки, окрашивания, укладки, макияж, маникюр и педикюр, косметология,
         перманентный макияж, массаж, коррекция фигуры
       </p>
-      <StandartBtn>получить скидку 10% на первый визит </StandartBtn>
+
+      <GetDiscountBtn>получить скидку 20% на первый визит</GetDiscountBtn>
     </div>
   );
 }

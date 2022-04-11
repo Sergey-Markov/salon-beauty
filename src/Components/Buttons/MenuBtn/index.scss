@@ -1,0 +1,23 @@
+.MenuBtn {
+  &-btn {
+    padding: 8px;
+    padding-left: 3px;
+    padding-right: 5px;
+    background-color: transparent;
+    border-color: transparent;
+    width: 40px;
+    height: 40px;
+    &:hover,
+    &:focus {
+      border-radius: 50%;
+      background-color: rgba(208, 32, 42, 1);
+    }
+  }
+  &-svgMenu {
+    fill: black;
+    &:hover,
+    &:focus {
+      fill: rgba(255, 255, 255, 1);
+    }
+  }
+}

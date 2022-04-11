@@ -1,14 +1,14 @@
 import PropTypes from "prop-types";
 // import s from "./button.module.css";
 
-export default function CommunButton({
+const CommunButton = ({
   children,
   onClick,
   className,
   disabled,
   active,
   ...otherProps
-}) {
+}) => {
   return (
     <button
       {...otherProps} //можем добавлять любой атрибут который нам нужен
@@ -19,7 +19,7 @@ export default function CommunButton({
       {children}
     </button>
   );
-}
+};
 CommunButton.propTypes = {
   children: PropTypes.node,
   onClick: PropTypes.func,
@@ -34,3 +34,5 @@ CommunButton.defaultProps = {
   disabled: false, // неактивная кнопка
   active: false, // активная кнопка
 };
+
+export default CommunButton;
