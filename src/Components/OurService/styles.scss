@@ -1,0 +1,18 @@
+.OurService {
+  &-field {
+    text-align: center;
+    background-color: rgb(245, 233, 201);
+    width: auto;
+    height: 620px;
+    padding-top: 77px;
+  }
+  &-title {
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-top: 25px;
+  }
+  &-ourService {
+    margin-bottom: 10px;
+  }
+}

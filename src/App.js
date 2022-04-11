@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 // import "./App.css";
 import React from "react";
 import Container from "./Components/Container/Container.js";
@@ -11,8 +10,7 @@ function App() {
     <Container>
       <Header />
       <Hero />
-      <OurService />  
-      <p>My App</p>
+      <OurService />
     </Container>
   );
 }
