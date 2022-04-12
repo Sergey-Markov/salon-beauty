@@ -1,3 +1,35 @@
-.Benefits-list{
-    list-style: none;
+
+.Benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10px;
+    &-item:not(:last-child){
+        width: 149px;
+        margin-bottom: 25px;
+    }
+    &-img-field{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+        
+    }
+    
+    &-img-svg{
+        // margin: 0 auto;
+        background-color: #D0202A;
+        border: 2px solid #D0202A;
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+
+    }
+    &-text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
 }

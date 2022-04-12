@@ -20,16 +20,11 @@ const data = [
 ];
 const Benefits = () => {
   return (
-    <ul className="Benefits-list">
+    <ul className="Benefits">
       {data.map((el) => (
         <li className="Benefits-item">
           <div className="Benefits-img-field">
-            <img
-              src={el.imgSvg}
-              width="90"
-              height="90"
-              className="Benefits-img-svg"
-            />
+            <img src={el.imgSvg} className="Benefits-img-svg" />
           </div>
           <p className="Benefits-text">{el.text}</p>
         </li>
