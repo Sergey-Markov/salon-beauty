@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 import CarIcon from "../../imeges/svg/Car.svg";
 import FirstAidIcon from "../../imeges/svg/FirstAid.svg";
 import TrainIcon from "../../imeges/svg/Train.svg";
@@ -25,7 +27,7 @@ const Benefits = () => {
   return (
     <ul className="Benefits">
       {data.map((el) => (
-        <li className="Benefits-item">
+        <li className="Benefits-item" key={uuidv4()}>
           <div className="Benefits-img-field">
             <img src={el.imgSvg} className="Benefits-img-svg" alt={el.alt} />
           </div>

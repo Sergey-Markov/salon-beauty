@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 import "./DiscountsBlock.scss";
 
 const data = [
@@ -21,7 +23,7 @@ const DiscountsBlock = () => {
       <h2 className="DiscountsBlock-title">{title}</h2>
       <ul className="DiscountsBlock-list">
         {data.map((el) => (
-          <li className="DiscountsBlock-item">
+          <li className="DiscountsBlock-item" key={uuidv4()}>
             <div className="DiscountsBlock-first-part">
               <div className="DiscountsBlock-item-circle"> </div>
               <div className="DiscountsBlock-item-title">{el.title}</div>
