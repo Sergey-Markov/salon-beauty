@@ -6,14 +6,17 @@ import "./Benefits.scss";
 
 const data = [
   {
+    alt: "метро",
     text: "5 мин. от метро митино",
     imgSvg: TrainIcon,
   },
   {
+    alt: "лицензия",
     text: "медицинская лицензия",
     imgSvg: FirstAidIcon,
   },
   {
+    alt: "парковка",
     text: "бесплатная парковка",
     imgSvg: CarIcon,
   },
@@ -24,7 +27,7 @@ const Benefits = () => {
       {data.map((el) => (
         <li className="Benefits-item">
           <div className="Benefits-img-field">
-            <img src={el.imgSvg} className="Benefits-img-svg" />
+            <img src={el.imgSvg} className="Benefits-img-svg" alt={el.alt} />
           </div>
           <p className="Benefits-text">{el.text}</p>
         </li>
