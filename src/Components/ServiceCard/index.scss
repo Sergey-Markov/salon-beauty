@@ -1,27 +1,88 @@
+// .ServiceCard {
+//   &-card-title {
+//     font-size: 12px;
+//     font-weight: 700;
+//     line-height: 16px;
+//     text-transform: uppercase;
+//     margin-top: 25px;
+//   }
+
+//   &-card-text {
+//     margin-bottom: 40px;
+//   }
+// }
+
 .ServiceCard {
-  &-card-title {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    text-transform: uppercase;
-    margin-top: 25px;
+  &-card-field{
+  margin-bottom: 30px;
   }
+  &-card-field-with-img{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  &-card-img{
+    width: 300px;
+    height: 270px;
+    margin-bottom: 45px;
+  }
+  &-card-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #BEBEBE;
+    margin-bottom: 0;
+    }
 
   &-card-text {
-    margin-bottom: 40px;
+    text-align: start;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #656363;
+    margin-bottom: 50px;
   }
 }
 
 .ChoseUs {
+  &-card-field{
+    width: 300px;
+    height: 259px;
+    padding: 20px;
+    background-color: rgba(#D0202A, 0.08);
+    border-radius: 33px;
+  }
+  &-card-field-with-img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &-card-img{
+    width: 44px;
+    height: auto;
+    margin-right: 27px;
+  }
   &-card-title {
-    font-size: 12px;
+    font-style: normal;
     font-weight: 700;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 20px;
     text-transform: uppercase;
-    margin-top: 25px;
   }
 
   &-card-text {
-    margin-bottom: 40px;
+    text-align: start;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #656363;
+    // margin-bottom: 40px;
   }
 }
+
+
