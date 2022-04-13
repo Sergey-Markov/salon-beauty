@@ -7,6 +7,7 @@ import DiscountsBlock from "./Components/DiscountsBlock/DiscountsBlock.js";
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
 import OurService from "./Components/OurService/OurService";
+import Portfolio from "./Components/Portfolio/Portfolio.js";
 import WelcomeCard from "./Components/WelcomeCard/WelcomeCard.js";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Benefits />
       <DiscountsBlock />
       <WelcomeCard />
+      <Portfolio />
     </Container>
   );
 }
