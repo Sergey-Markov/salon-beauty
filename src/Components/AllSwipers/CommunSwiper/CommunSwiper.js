@@ -1,26 +1,28 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade } from "swiper";
+import { Pagination } from "swiper";
+import PortfolioCard from "../../PortfolioCard/PortfolioCard";
 
 import "swiper/css";
 import "swiper/css/effect-cards";
 
-const CommunSwiper = ({ data, className }) => {
+const CommunSwiper = ({ data, classNames }) => {
   return (
     <Swiper
-      modules={[EffectFade]}
-      effect="cards"
+      slidesPerView={2}
+      centeredSlides={true}
+      spaceBetween={12}
       grabCursor={true}
-      navigation
       pagination={{
         clickable: true,
       }}
-      spaceBetween={0}
+      modules={[Pagination]}
+      className="Portfolio"
     >
-      {data.map(({ src, alt }) => {
+      {data.map((el) => {
         return (
           <SwiperSlide>
-            <img src={src} alt={alt} className={className} />
+            <PortfolioCard classNames={classNames} src={el.src} alt={el.alt} />
           </SwiperSlide>
         );
       })}

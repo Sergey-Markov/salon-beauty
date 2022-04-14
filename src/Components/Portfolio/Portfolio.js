@@ -1,29 +1,33 @@
-import brows from "../../imeges/portfolio/brows.jpeg";
-import longHeir from "../../imeges/portfolio/longHeir.png";
-import manicure from "../../imeges/portfolio/manicure.jpeg";
+import { portfolioImages } from "../../images/portfolio";
 
 import { SwipersInApp } from "../AllSwipers";
 
 import "./Portfolio.scss";
 
+const { browsMob, longHeirMob, manicureMob } = portfolioImages;
 const images = [
   {
-    src: brows,
+    src: browsMob,
     alt: "brows",
   },
   {
-    src: longHeir,
+    src: longHeirMob,
     alt: "longHeir",
   },
   {
-    src: manicure,
+    src: manicureMob,
     alt: "manicure",
   },
 ];
+const classNames = {
+  imgBox: "Portfolio-imgBox",
+  tumb: "Portfolio-tumb",
+};
 const Portfolio = () => {
   return (
     <div className="Portfolio">
-      <SwipersInApp.CommunSwiper data={images} className="Portfolio-img" />
+      <h2 className="Portfolio-title">портфолио</h2>
+      <SwipersInApp.CommunSwiper data={images} classNames={classNames} />
     </div>
   );
 };

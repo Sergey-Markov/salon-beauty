@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
 
-import CarIcon from "../../imeges/svg/Car.svg";
-import FirstAidIcon from "../../imeges/svg/FirstAid.svg";
-import TrainIcon from "../../imeges/svg/Train.svg";
+import CarIcon from "../../images/svg/Car.svg";
+import FirstAidIcon from "../../images/svg/FirstAid.svg";
+import TrainIcon from "../../images/svg/Train.svg";
 
 import "./Benefits.scss";
 

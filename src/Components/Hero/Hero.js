@@ -1,6 +1,5 @@
 import { GetDiscountBtn } from "../Buttons";
 import "./index.scss";
-// import { StandartBtn } from "../Buttons";
 
 export default function Hero() {
   return (

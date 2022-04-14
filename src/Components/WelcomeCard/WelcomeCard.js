@@ -1,11 +1,8 @@
-import logo from "../../imeges/svg/logo.svg";
-
-import locate from "../../imeges/svg/locate.svg";
-import phone from "../../imeges/svg/phone.svg";
-import website from "../../imeges/svg/website.svg";
-import instagram from "../../imeges/svg/instagram.svg";
-
+import { svgImages } from "../../images/svg";
 import "./WelcomeCard.scss";
+
+const { logo, locate, phone, website, instagram } = svgImages;
+
 const WelcomeCard = () => {
   return (
     <div className="WelcomeCard-container">

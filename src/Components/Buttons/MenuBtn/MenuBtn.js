@@ -1,4 +1,4 @@
-import { ReactComponent as HeaderIcon } from "../../../imeges/svg/menu.svg";
+import { ReactComponent as HeaderIcon } from "../../../images/svg/menu.svg";
 
 import { CommunButton } from "..";
 
