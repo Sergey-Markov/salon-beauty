@@ -1,0 +1,64 @@
+.Actions{
+    padding: 70px 9px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    text-align: center;
+
+
+    &-title{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 29px;
+        line-height: 35px;
+        color: #000000;
+        margin-bottom: 28px;
+
+    }
+    &-itemField{
+        width: 300px;
+        height: 300px;
+        padding: 10px 45px;
+        border-radius: 50%;
+        background-color: transparent;        
+        border: 1px solid #101010;
+
+        color: #D0202A;
+        padding-top: 82px;
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+
+        &--title{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            margin-bottom: 22px;
+            
+        }
+        &--discount{
+            color: #101010;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &:hover,
+        &:focus{
+            color: #FFFFFF;  
+            font-size: 14px;
+            line-height: 17px;              
+            background-color: #D0202A;        
+            border: 1px solid #D0202A;
+        }
+        &:hover &--discount,
+        &:focus &--discount{
+            color: #FFFFFF;  
+            
+        }
+        
+
+        
+    }
+}

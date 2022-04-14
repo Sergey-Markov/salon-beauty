@@ -1,5 +1,6 @@
 // import "./App.css";
 import React from "react";
+import Actions from "./Components/Actions/Actions.js";
 import Benefits from "./Components/Benefits/Benefits.js";
 import ChoseUs from "./Components/ChoseUs/ChoseUs.js";
 import Container from "./Components/Container/Container.js";
@@ -21,6 +22,7 @@ function App() {
       <DiscountsBlock />
       <WelcomeCard />
       <Portfolio />
+      <Actions />
     </Container>
   );
 }
