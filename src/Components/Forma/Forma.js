@@ -1,11 +1,15 @@
 import { useState } from "react";
 import "./Forma.scss";
 
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+import { SubmitBtn } from "../Buttons";
+
 const Forma = () => {
   const [phone, setPhone] = useState("");
 
-  const handleChange = (e) => {
-    setPhone(e.target.value);
+  const handleChange = (value) => {
+    setPhone(value);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,17 +19,14 @@ const Forma = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="tel"
-        placeholder="093-***-****"
-        name="telephone"
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-        onChange={handleChange}
+      <PhoneInput
+        country="ua"
         value={phone}
-        required
-        className="Forma-inputTel"
+        onChange={handleChange}
+        placeholder="38 (063) 123-45-67"
+        inputClass="Forma-inputTel"
       />
-      <input type="submit" value="отправить" className="Forma-submitTel" />
+      <SubmitBtn onSuhandleSubmitbmit={handleSubmit} />
     </form>
   );
 };
