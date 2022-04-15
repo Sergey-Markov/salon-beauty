@@ -4,6 +4,8 @@
   "homepage": "https://Sergey-Markov.github.io/salon-beauty",
   "private": true,
   "dependencies": {
+    "@googlemaps/react-wrapper": "^1.1.31",
+    "@react-google-maps/api": "^2.8.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",

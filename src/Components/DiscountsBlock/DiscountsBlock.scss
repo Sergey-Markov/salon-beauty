@@ -7,9 +7,14 @@
         font-size: 21px;
         line-height: 26px;
         text-transform: uppercase;
+        text-align: center;
 
         color: #000000;
         margin-bottom: 30px;
+    }
+    &-list{
+        width: 240px;
+        margin: 0 auto;
     }
     &-item{
         display: flex;

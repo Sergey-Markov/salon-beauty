@@ -9,6 +9,7 @@ import DiscountsBlock from "./Components/DiscountsBlock/DiscountsBlock.js";
 import GetСertificate from "./Components/GetСertificate/GetСertificate.js";
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
+import MapApp from "./Components/MapApp/MapApp.js";
 import OurService from "./Components/OurService/OurService";
 import Portfolio from "./Components/Portfolio/Portfolio.js";
 import WelcomeCard from "./Components/WelcomeCard/WelcomeCard.js";
@@ -27,6 +28,7 @@ function App() {
       <Actions />
       <GetСertificate />
       <Address />
+      <MapApp />
     </Container>
   );
 }

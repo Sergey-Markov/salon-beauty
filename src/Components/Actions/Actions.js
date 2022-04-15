@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 import "./Actions.scss";
 
 const data = [
@@ -23,7 +25,7 @@ const Actions = () => {
     <div className="Actions">
       <h2 className="Actions-title">акции</h2>
       {data.map((el) => (
-        <div className="Actions-itemField">
+        <div className="Actions-itemField" key={uuidv4()}>
           <h3 className="Actions-itemField--title">{el.title}</h3>
           <p className="Actions-itemField--discount">{el.discount}</p>
         </div>

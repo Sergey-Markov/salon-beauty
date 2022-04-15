@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import PortfolioCard from "../../PortfolioCard/PortfolioCard";
@@ -21,7 +22,7 @@ const CommunSwiper = ({ data, classNames }) => {
     >
       {data.map((el) => {
         return (
-          <SwiperSlide>
+          <SwiperSlide key={uuidv4()}>
             <PortfolioCard classNames={classNames} src={el.src} alt={el.alt} />
           </SwiperSlide>
         );
