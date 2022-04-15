@@ -1,0 +1,59 @@
+.Address{
+    width: 100%;
+    padding: 70px 9px;
+    font-style: normal;
+    color: #101010;
+    font-size: 16px;
+    line-height: 20px;
+
+    &-title{
+        font-weight: 400;
+        font-size: 29px;
+        line-height: 35px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        text-align: center;
+
+    }
+    &-field{
+        display: flex;
+        justify-content: center;
+        &--img{
+            width: 35px;
+            height: 35px;
+            margin-right: 29px;
+        }
+        &--text{
+            text-align: start;
+            font-style: normal;
+            font-weight: 400;
+            width: 148px;
+            margin-bottom: 10px;
+        }
+        &--tel{
+            color: #101010;
+            display: block;
+            text-decoration:none;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            &:hover,
+            &:focus{
+                color:#D0202A;
+            }
+        }
+        &--insta{
+            color: #101010;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: start;
+            text-transform: uppercase;
+            &:hover,
+            &:focus{
+                color:#D0202A;
+            }
+        }
+    }
+    
+}

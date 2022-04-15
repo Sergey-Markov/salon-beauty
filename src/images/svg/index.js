@@ -9,6 +9,7 @@ import Car from "./Car.svg";
 import FirstAid from "./FirstAid.svg";
 import Train from "./Train.svg";
 
+import phoneWatsUp from "./phoneWatsUp.svg";
 const svgImages = {
   logo,
   locate,
@@ -18,5 +19,6 @@ const svgImages = {
   Car,
   FirstAid,
   Train,
+  phoneWatsUp,
 };
 export { svgImages };
