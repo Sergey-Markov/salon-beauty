@@ -36,13 +36,4 @@ img {
   font-family: "Roboto", sanserif;
 }
 
-@media screen and (min-width: 600px) {
-  .container {
-    width: 600px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-  }
-}
+

@@ -4,7 +4,7 @@ const ServiceCard = ({ slide, className }) => {
     <div className={`${className}-card-field`}>
       <div className={`${className}-card-field-with-img`}>
         <div className={`${className}-card-img`}>
-          <img alt={slide.alt} src={slide.imgSrc} />
+          <img alt={slide.alt} src={slide.src} />
         </div>
         <h3 className={`${className}-card-title`}>{slide.title}</h3>
       </div>

@@ -18,15 +18,15 @@ const Forma = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="Forma-inputTel">
       <PhoneInput
         country="ua"
         value={phone}
         onChange={handleChange}
         placeholder="38 (063) 123-45-67"
-        inputClass="Forma-inputTel"
+        // inputClass="Forma-inputTel"
       />
-      <SubmitBtn onSuhandleSubmitbmit={handleSubmit} />
+      <SubmitBtn />
     </form>
   );
 };
