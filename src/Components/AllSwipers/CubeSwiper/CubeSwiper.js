@@ -32,7 +32,7 @@ const CubeSwiper = ({ data, title, withBtn, btnTitle, elClass }) => {
           clickable: true,
         }}
         spaceBetween={0}
-        className="mySwiper"
+        className={elClass}
       >
         {data.map((slide) => (
           <SwiperSlide key={uuidv4()}>
